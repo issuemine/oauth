@@ -22,9 +22,10 @@ Naver OAuth2.0
 해당 어플리케이션은 다음과 같은 API를 제공합니다.
   - /users (로그인이 되어 있지 않으면 /login API로 redirect 후 로그인 절차 진행, 로그인이 되어 있으면 user 정보 JSON 형태 출력)
   - /login (OAuth와 통신하여 사용자에게 로그인을 제공해주는 API)
-
+  - /users/logout (로그인한 유저 로그아웃 처리)
+  
 ### 어플리케이션 실행 방법 및 사용법
-  - IDE에 해당 프로젝트 Import 후 스프링부트 내중 톰캣 실행
+  - IDE에 해당 프로젝트 Import 후 스프링부트 내장 톰캣 실행
   - 기본적으로  80번 포트로 설정되어 있습니다. 변경시 application.properties의 server.port를 변경해주시면 됩니다.
   - 로컬 MySQL을 사용합니다. 스키마는 /oauth를 사용합니다.(JPA의 table 자동 옵션이 활성화될 경우  스키마의 table이 지워질 수도 있습니다. 주의하여주시길 바랍니다.)
   - 위의 설정을 변경하고 싶으시면 application.peroperties 파일의 spring.datasource를 변경해주시길 바랍니다.

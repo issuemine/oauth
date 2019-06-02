@@ -41,7 +41,7 @@ public class HomeController {
 	}
 	
 	@ResponseBody
-	@RequestMapping(value = "/user/logout", method = RequestMethod.GET)
+	@RequestMapping(value = "/users/logout", method = RequestMethod.GET)
 	public void logout(HttpSession session, HttpServletResponse response) throws IOException {
 		session.removeAttribute(SessionConstant.SESSION_LOGIN_ID);
 		session.removeAttribute(SessionConstant.SESSION_ACCESS_TOKEN);
