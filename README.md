@@ -28,5 +28,5 @@ Naver OAuth2.0
   - IDE에 해당 프로젝트 Import 후 스프링부트 내장 톰캣 실행
   - 기본적으로  80번 포트로 설정되어 있습니다. 변경시 application.properties의 server.port를 변경해주시면 됩니다.
   - 로컬 MySQL을 사용합니다. 스키마는 /oauth를 사용합니다.(JPA의 table 자동 옵션이 활성화될 경우  스키마의 table이 지워질 수도 있습니다. 주의하여주시길 바랍니다.)
-  - 위의 설정을 변경하고 싶으시면 application.peroperties 파일의 spring.datasource를 변경해주시길 바랍니다.
+  - 위의 설정을 변경하고 싶으시면 application.peroperties 파일의 spring.datasource를 변경해주시길 바랍니다. (id 및 password 변경 필요)
   - 로그인을 원하시면 http://localhost/users 를 이용하시면 됩니다.

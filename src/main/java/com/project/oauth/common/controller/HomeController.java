@@ -42,10 +42,10 @@ public class HomeController {
 	
 	@ResponseBody
 	@RequestMapping(value = "/users/logout", method = RequestMethod.GET)
-	public void logout(HttpSession session, HttpServletResponse response) throws IOException {
+	public ResponseEntity<String> logout(HttpSession session, HttpServletResponse response) throws IOException {
 		session.removeAttribute(SessionConstant.SESSION_LOGIN_ID);
 		session.removeAttribute(SessionConstant.SESSION_ACCESS_TOKEN);
 		session.removeAttribute(SessionConstant.SESSION_REFRESH_TOKEN);
-		response.sendRedirect("/users");
+		return new ResponseEntity<>(null, HttpStatus.OK);
 	}
 }
